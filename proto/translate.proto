@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package proto;
+
+// login service
+service TranslateService {
+	rpc Translate(Request) returns (Response);
+} 
+
+message Request {
+	string text = 1;
+	string target = 2;
+}
+
+message Response {
+	string text = 1;
+}
+
+
