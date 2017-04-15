@@ -1,4 +1,4 @@
 FROM alpine:latest
-COPY tranlate /usr/bin/
-ENTRYPOINT /usr/bin/auth
-EXPOSE 10000 8080 6060
+COPY translate /usr/bin/
+ENTRYPOINT /usr/bin/translate
+EXPOSE 10000 6060
